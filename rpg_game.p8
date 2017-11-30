@@ -230,6 +230,7 @@ function draw_debug()
 	print(flr(player.celx), player.x +10, player.y +6,8)
 	print(flr(player.cely), player.x +18, player.y +6,8)
 	--mset to draw sprites on the map
+	print("health: ".. player.health,1,1,8)
 end
 __gfx__
 00000000001cc10001accc10001cc10c000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
