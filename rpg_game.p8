@@ -91,7 +91,7 @@ function player_movement()
  	player.y = (63*8)+2
  end
  --player collision
- 
+ 	
  --handle anim arrays
  if(frames%player.fdur == 0) then
 		player.sindex += 1
