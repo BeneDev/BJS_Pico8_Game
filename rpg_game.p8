@@ -93,13 +93,13 @@ function player_movement()
  end
  --player shoots
  if(btnp(0)) then
- 	add_bullet(-1,0)
+ 	add_bullet(-2,0)
  elseif(btnp(1)) then
- 	add_bullet(1,0)
+ 	add_bullet(2,0)
  elseif(btnp(2)) then
- 	add_bullet(0,-1)
+ 	add_bullet(0,-2)
  elseif(btnp(3)) then
- 	add_bullet(0,1)
+ 	add_bullet(0,2)
  end
  --player map coordinates
  player.celx = player.x/8
@@ -200,8 +200,7 @@ function draw_gameplay()
  )
  --draw bullets
  for e in all (bullets) do
- 	spr(
- 		player.sbullet,
+ 	pset(
  		e.x,
  		e.y
  	)
